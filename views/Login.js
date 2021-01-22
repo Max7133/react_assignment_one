@@ -12,8 +12,8 @@ const Login = ({navigation}) => {
 
   const logIn = async () => {
     const testUser = {
-      username: 'maksimpa',
-      password: '40014222',
+      username: 'maskimpa',
+      password: 'hittentwo',
     };
     try {
       const userData = await postLogin(testUser);
@@ -21,7 +21,7 @@ const Login = ({navigation}) => {
       await AsyncStorage.setItem('userToken', userData.token);
     } catch (error) {
       console.error('postLogin error', error);
-      // TODO: add user notification about login error
+      // TOOD: add user notification about login error
     }
   };
 
